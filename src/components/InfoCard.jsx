@@ -10,7 +10,7 @@ export default function InfoCard({ icon, title, text, color }) {
   };
 
   return (
-    <div className="flex flex-col md:flex-col-3 gap-3 bg-gray-100 p-4 rounded-lg">
+    <div className="flex flex-col md:flex-col-3 gap-3 bg-gray-100 p-4 pr-10 md:p-0 rounded-lg">
       <div className="flex flex-start items-center gap-2">
         {/* Icon inside a circular background */}
         <div

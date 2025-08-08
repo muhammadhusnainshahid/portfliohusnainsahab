@@ -5,10 +5,10 @@ import Footer from "@/components/Footer";
 
 export default function App({ Component, pageProps }) {
   return (
-    <>
+    <div className="overflow-x-hidden">
       <Navbar />
       <Component {...pageProps} />;
       <Footer />
-    </>
+    </div>
   );
 }

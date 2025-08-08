@@ -41,7 +41,7 @@ export default function SkillsTabs() {
   const tabs = ["technical", "soft", "tools"];
   const labels = {
     technical: {
-      label: "Technical Skills",
+      label: "Technical",
       icon: <FaCode className="text-blue-600" />,
     },
 
@@ -146,10 +146,10 @@ export default function SkillsTabs() {
       id="skills"
       className="px-6 md:px-20 py-10"
     >
-      <h2 className="text-4xl font-bold text-center text-gray-800 mb-2">
+      <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-2">
         Skills & <span className="text-blue-600">Expertise</span>
       </h2>
-      <p className="text-center text-gray-500 mb-10">
+      <p className="text-center text-sm md:text-md text-gray-500 mb-10">
         Explore my strengths across tech, tools, and mindset.
       </p>
 
@@ -192,7 +192,7 @@ export default function SkillsTabs() {
               className="grid sm:grid-cols-2 md:grid-cols-3 gap-8"
             >
               {technicalSkills.map((section, i) => (
-                <div key={i} className="shadow-lg w-[300px] px-8 py-8 transform duration-300 hover:-translate-y-1 hover:shadow-blue-600">
+                <div key={i} className="shadow-lg  px-8 py-8 transform duration-300 hover:-translate-y-1 hover:shadow-blue-600">
                   {/* Category Heading with Icon */}
                   <div className="flex items-center gap-2 mb-4 ">
                     <div className="rounded-full flex items-center justify-center w-8 h-8 bg-blue-800">
@@ -356,7 +356,7 @@ function TabButton({ label, tab, activeTab, setActiveTab, icon }) {
   return (
     <button
       onClick={() => setActiveTab(tab)}
-      className={`relative z-10 w-40 h-10 text-sm font-medium rounded-full transition-all duration-300 flex items-center justify-center gap-2 ${
+      className={`relative z-10 w-[90px] md:w-40 h-10 text-xs md:text-sm px-2 font-medium rounded-full transition-all duration-300 flex items-center justify-center gap-2 ${
         isActive ? "text-white" : "text-gray-800"
       }`}
     >

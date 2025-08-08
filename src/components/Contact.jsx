@@ -15,10 +15,10 @@ export default function Contact() {
 
   return (
     <section id="contact" className="px-6 md:px-20 py-10">
-      <h2 className="text-4xl font-bold text-center text-gray-800 mb-2">
+      <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-2">
         Contact <span className="text-blue-600">Me</span>
       </h2>
-      <p className="text-center text-gray-500 mb-10">Let’s get connected</p>
+      <p className="text-center text-sm md:text-md text-gray-500 mb-10">Let’s get connected</p>
 
       <div className="relative w-fit mx-auto mb-10 bg-gray-100 p-1 px-2 rounded-full shadow-inner flex">
         {/* Sliding Blue Background */}
@@ -31,7 +31,7 @@ export default function Contact() {
         {/* Button 1: Contact Form */}
         <button
           onClick={() => setActiveTab("form")}
-          className={`relative z-10 w-40 h-10 text-sm font-medium rounded-full transition-all duration-300 px-2 flex items-center justify-center gap-2 ${
+          className={`relative z-10 w-[120px] md:w-40 h-10 text-xs md:text-sm font-medium rounded-full transition-all duration-300 px-2 flex items-center justify-center gap-2 ${
             activeTab === "form" ? "text-white" : "text-gray-800"
           }`}
         >
@@ -46,7 +46,7 @@ export default function Contact() {
         {/* Button 2: Contact Methods */}
         <button
           onClick={() => setActiveTab("methods")}
-          className={`pl-3 relative z-10 w-40 h-10 text-sm font-medium rounded-full transition-all duration-300 flex items-center justify-center gap-2 ${
+          className={`pl-3 relative z-10 w-[120px] md:w-40 h-10 text-xs md:text-sm font-medium rounded-full transition-all duration-300 flex items-center justify-center gap-2 ${
             activeTab === "methods" ? "text-white" : "text-gray-800"
           }`}
         >

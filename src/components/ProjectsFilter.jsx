@@ -15,17 +15,17 @@ import { motion, useInView, AnimatePresence } from "framer-motion";
 const allProjects = [
   {
     title: "FlavorVerse Pizza",
-    category: "Frontend",
+    category: "FullStack",
     description:
       "Modern pizza ordering website with size, flavors, and cart system.",
     tech: ["React", "Tailwind", "Framer Motion", "Context API"],
-    github: "https://github.com/yourname/flavorverse",
-    live: "https://flavorverse.vercel.app",
+    github: "https://github.com/HameyDev/mern-food-app",
+    live: "https://mern-food-app-frontend-0meh.onrender.com/",
     icon: <FaLaptopCode />,
   },
   {
     title: "Event Booking App",
-    category: "FullStack",
+    category: "Frontend",
     description: "Book and manage events with full CRUD and admin panel.",
     tech: ["React", "Node.js", "Express", "MongoDB"],
     github: "https://github.com/yourname/event-booking",
@@ -38,8 +38,8 @@ const allProjects = [
     description:
       "Clients submit diet plans & book consultations with backend storage.",
     tech: ["Next.js", "Tailwind", "MongoDB", "Node.js"],
-    github: "https://github.com/yourname/nutritionist-app",
-    live: "https://nutritionist.vercel.app",
+    github: "https://github.com/HameyDev/mern-nutrition",
+    live: "https://nutricare-6flv.onrender.com/",
     icon: <FaCode />,
   },
   {
@@ -72,10 +72,10 @@ export default function ProjectsFilter() {
 
   return (
     <section id="projects" className="px-6 md:px-20 py-10 bg-white">
-      <h2 className="text-4xl font-bold text-center text-gray-800 mb-2">
+      <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-2">
         My <span className="text-blue-600">Projects</span>
       </h2>
-      <p className="text-center text-gray-500 mb-10">Explore by category</p>
+      <p className="text-center text-sm md:text-md text-gray-500 mb-10">Explore by category</p>
 
       <div className="relative w-fit mx-auto mb-12 bg-gray-100 p-1 rounded-full shadow-inner flex">
         {/* Sliding Background */}
@@ -96,7 +96,7 @@ export default function ProjectsFilter() {
           <button
             key={cat}
             onClick={() => setActiveCategory(cat)}
-            className={`relative z-10 w-40 h-10 text-sm font-medium rounded-full transition-all duration-300 flex items-center justify-center gap-2 ${
+            className={`relative z-10 w-[70px] md:w-40 h-10 text-xs md:text-sm sm:pr-6 px-2 font-medium rounded-full transition-all duration-300 flex items-center justify-center gap-2 ${
               activeCategory === cat ? "text-white" : "text-gray-800"
             }`}
           >

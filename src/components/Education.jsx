@@ -31,10 +31,10 @@ export default function Education() {
       transition={{ duration: 0.6, ease: "easeOut" }}
       className="px-3 md:px-20 py-10"
     >
-      <h2 className="text-4xl font-bold text-center text-gray-800 mb-2">
+      <h2 className="text-3xl font-bold text-center text-gray-800 mb-2">
         Educational <span className="text-blue-600">Background</span>
       </h2>
-      <p className="text-center text-gray-500 mb-10">
+      <p className="text-center text-sm md:text-md text-gray-500 mb-10">
         My academic journey and continuous learning path in computer science and
         web development
       </p>
@@ -55,7 +55,7 @@ export default function Education() {
         {/* Buttons */}
         <button
           onClick={() => setActiveTab("formal")}
-          className={`relative z-10 w-40 h-10 text-sm font-medium rounded-full transition-all duration-300 ${
+          className={`relative z-10 w-[140px] md:w-40 h-10 text-xs md:text-sm font-medium rounded-full transition-all duration-300 ${
             activeTab === "formal" ? "text-white" : "text-gray-800"
           }`}
         >
@@ -64,7 +64,7 @@ export default function Education() {
 
         <button
           onClick={() => setActiveTab("cert")}
-          className={`relative z-10 w-40 h-10 text-sm font-medium rounded-full transition-all duration-300 flex items-center justify-center gap-2 ${
+          className={`relative z-10 w-[140px] md:40 h-10 text-xs md:text-sm font-medium rounded-full transition-all duration-300 flex items-center justify-center gap-2 ${
             activeTab === "cert" ? "text-white" : "text-gray-800"
           }`}
         >
