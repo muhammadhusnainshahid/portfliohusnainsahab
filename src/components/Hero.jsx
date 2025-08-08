@@ -76,7 +76,7 @@ export default function Hero() {
         <div className="flex gap-4 flex-wrap justify-center md:justify-start mt-6">
           {/* Download CV Button */}
           <a
-            href="/hammadresume.pdf"
+            href="/hammadResume.pdf"
             download
             className="text-sm flex items-center gap-2 px-8 py-3 bg-blue-600 text-white rounded-xl font-semibold shadow-lg hover:bg-blue-700 transition duration-300"
           >

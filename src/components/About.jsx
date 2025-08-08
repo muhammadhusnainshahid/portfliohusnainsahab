@@ -157,7 +157,7 @@ export default function About() {
             </div>
 
             <a
-              href="/hammadresume.pdf"
+              href="/hammadResume.pdf"
               download
               className="flex items-center gap-2 text-sm bg-black text-white px-6 py-2 rounded-lg shadow hover:bg-white hover:text-black border  text-center transition duration-300 hover:scale-105"
             >
