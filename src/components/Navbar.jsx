@@ -43,7 +43,7 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="md:hidden px-4 pb-4 bg-white shadow">
+        <div className="md:hidden text-center px-4 pb-4 bg-white shadow">
           {navLinks.map((link) => (
             <a
               key={link.name}
