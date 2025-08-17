@@ -182,7 +182,7 @@ function MethodsView() {
           </div>
         </div>
         <h4 className="font-bold text-gray-800 mb-1">Phone</h4>
-        <p className="text-gray-600 text-sm">+92-XXX-XXXXXXX</p>
+        <p className="text-gray-600 text-sm">+92-3175422689</p>
       </div>
     </div>
   );

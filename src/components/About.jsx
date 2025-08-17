@@ -60,7 +60,7 @@ export default function About() {
         >
           <img
             src="/profile.jpg"
-            alt="Hammad"
+            alt="Usama"
             className="rounded-lg shadow-lg w-40 h-40  md:w-72 md:h-72 object-cover"
           />
         </motion.div>
@@ -77,7 +77,7 @@ export default function About() {
           <InfoCard
             icon={<FaUserAlt />}
             title="Bio"
-            text="Passionate software engineer with over 5 years of experience in full-stack development. Dedicated to building user-friendly and scalable web applications."
+            text="Enthusiastic and detail-oriented Information Technology professional with 2 years of Flutter experience and growing expertise in React development, dedicated to creating innovative, scalable, and user-centric Flutter applications."
             color="blue"
           />
 
@@ -93,7 +93,7 @@ export default function About() {
           <InfoCard
             icon={<FaLanguage />}
             title="Languages"
-            text="Fluent in English and Urdu. Learning Arabic and Japanese."
+            text="Fluent in English and Urdu. Learning Arabic and Pashtu."
             color="orange"
           />
 
@@ -103,9 +103,9 @@ export default function About() {
             title="Contact"
             text={
               <>
-                Email: hammad@example.com <br />
-                Phone: +92-XXX-XXXXXXX <br />
-                LinkedIn: linkedin.com/in/hammad
+                Email: usama.bsit603@iiu.edu.pk <br />
+                Phone: +92-317-5422689<br />
+                LinkedIn: linkedin.com/in/usama-m
               </>
             }
             color="purple"
@@ -115,7 +115,7 @@ export default function About() {
           <InfoCard
             icon={<FaMapMarkerAlt />}
             title="Location"
-            text="Based in Lahore, Pakistan. Available for remote work worldwide."
+            text="Based in Islamabad Pakistan. Available for remote work worldwide."
             color="red"
           />
 
@@ -123,7 +123,7 @@ export default function About() {
           <InfoCard
             icon={<FaGraduationCap />}
             title="Education Summary"
-            text="BS in Software Engineering (2016–2020). Full-Stack Bootcamp Graduate (2021)."
+            text="BS Information Technology (2020–2024)."
             color="teal"
           />
 
@@ -157,7 +157,7 @@ export default function About() {
             </div>
 
             <a
-              href="/hammadResume.pdf"
+              href="/usamacv.pdf"
               download
               className="flex items-center gap-2 text-sm bg-black text-white px-6 py-2 rounded-lg shadow hover:bg-white hover:text-black border  text-center transition duration-300 hover:scale-105"
             >

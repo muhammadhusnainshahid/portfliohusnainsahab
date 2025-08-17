@@ -87,12 +87,12 @@ export default function Education() {
             {/* Degree Card */}
             <EduCard
               icon={<FaGraduationCap />}
-              title="Bachelor of Software Engineering"
-              degree="Software Engineering"
-              institution="University of Your Choice"
-              description="Passionate and detail-oriented software developer with a strong foundation in full-stack web development. Experienced in building responsive, high-performance applications using modern technologies like React.js, Next.js, Node.js, and MongoDB."
-              location="Lahore, Pakistan"
-              years="2016 - 2020"
+              title="Bachelor of Information Technology"
+              degree="Information Technology"
+              institution="International Islamic University"
+              description="Passionate and detail-oriented IT developer with a strong foundation in Flutter development. Experienced in building responsive, high-performance applications using modern technologies like Flutter,React.js, Next.js, Node.js, and MongoDB."
+              location="Islamabad, Pakistan"
+              years="2020 - 2024"
               gpa="3.85/4.00"
               status="Graduated"
               courses={[
@@ -101,6 +101,7 @@ export default function Education() {
                 "Software Engineering",
                 "Mobile Programming",
                 "Web Development",
+                "Flutter Developer"
               ]}
               achievements={[
                 "Dean's List for 6 Semesters",
@@ -111,12 +112,12 @@ export default function Education() {
             {/* Bootcamp Card */}
             <EduCard
               icon={<FaCode />}
-              title="Full Stack Web Development"
+              title="FFlutter Developer"
               degree="Intensive Bootcamp"
               institution="MERN Bootcamp – Online"
-              description="Passionate and detail-oriented software developer with a strong foundation in full-stack web development. Experienced in building responsive, high-performance applications using modern technologies like React.js, Next.js, Node.js, and MongoDB."
+              description="Passionate and detail-oriented software developer with a strong foundation in Flutter development. Experienced in building responsive, high-performance applications using modern technologies like Flutter Dart React.js, Next.js, Node.js, and MongoDB."
               location="Remote"
-              years="2021"
+              years="2024"
               gpa="Outstanding"
               status="Certified"
               courses={[

@@ -26,15 +26,15 @@ export default function Hero() {
       {/* Left Content */}
       <div className="md:w-1/2 space-y-5 text-center md:text-left">
         <h1 className="text-2xl md:text-3xl font-bold text-gray-800">
-          Hi, I’m <span className="text-blue-600">Muhammad Hammad</span>
+          Hi, I’m <span className="text-blue-600">Usama Mehboob</span>
         </h1>
         <h2 className="text-md md:text-md font-semibold text-gray-600">
           <Typewriter
             words={[
-              "Full-Stack Developer",
-              "Frontend Developer",
-              "Backend Developer",
-              "Future Billionaire",
+              "Flutter Developer",
+              "Web Developer",
+              "IT Professional",
+              "React Developer",
             ]}
             loop={true}
             cursor
@@ -46,7 +46,7 @@ export default function Hero() {
         </h2>
 
         <p className="text-gray-600 text-sm">
-          I build modern web apps, blend psychology with technology, and love
+          I build modern Flutter  apps, blend psychology with technology, and love
           turning ideas into impact. Let’s connect!
         </p>
 
@@ -67,7 +67,7 @@ export default function Hero() {
           >
             <FaGithub />
           </a>
-          <a href="mailto:your@email.com">
+          <a href="usama.bsit603@iiu.edu.pk">
             <FaEnvelope />
           </a>
         </div>
@@ -76,7 +76,7 @@ export default function Hero() {
         <div className="flex gap-4 flex-wrap justify-center md:justify-start mt-6">
           {/* Download CV Button */}
           <a
-            href="/hammadResume.pdf"
+            href="/usamacv.pdf"
             download
             className="text-sm flex items-center gap-2 px-8 py-3 bg-blue-600 text-white rounded-xl font-semibold shadow-lg hover:bg-blue-700 transition duration-300"
           >
@@ -139,7 +139,7 @@ export default function Hero() {
         <div className="group md:h-72 md:w-72 overflow-hidden rounded-full border-4 border-blue-300 shadow-lg w-40 h-40 mt-5 md:mb-5">
           <img
             src="/profile.jpg"
-            alt="Hammad"
+            alt="Usama"
             className="w-40 h-40 md:h-72 md:w-72 object-cover rounded-full transform transition duration-500 group-hover:scale-110"
           />
         </div>
