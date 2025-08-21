@@ -7,6 +7,7 @@ import {
   FaGithub,
   FaLinkedin,
   FaTwitter,
+  FaFacebook,
 } from "react-icons/fa";
 import { AnimatePresence, motion } from "framer-motion";
 
@@ -169,7 +170,7 @@ function MethodsView() {
             target="_blank"
             className="hover:text-blue-400"
           >
-            <FaTwitter />
+            <FaFacebook />
           </a>
         </div>
       </div>
