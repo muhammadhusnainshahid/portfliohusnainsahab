@@ -60,7 +60,7 @@ export default function About() {
           whileHover={{ rotate: [0, 2, -2, 2, -2, 0] }}
         >
           <img
-            src="/profile.jpeg"
+            src="/husnain.jpeg"
             alt="Muhammad Husnain Shahid"
             className="rounded-lg shadow-lg w-40 h-40  md:w-72 md:h-72 object-cover"
           />
