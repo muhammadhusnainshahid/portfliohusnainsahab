@@ -138,7 +138,7 @@ function MethodsView() {
           </div>
         </div>
         <h4 className="font-bold text-gray-800 mb-1">Email</h4>
-        <p className="text-gray-600 text-sm">hammad@example.com</p>
+        <p className="text-gray-600 text-sm">husnainshahidm@gmail.com</p>
       </div>
 
       {/* Social Media Card */}
@@ -151,21 +151,21 @@ function MethodsView() {
         <h4 className="font-bold text-gray-800 mb-3">Social Media</h4>
         <div className="flex justify-center gap-4 text-2xl text-gray-600">
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/muhammad-husnain-shahid-36b34b26b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
             target="_blank"
             className="hover:text-blue-600"
           >
             <FaLinkedin />
           </a>
           <a
-            href="https://github.com"
+            href="https://github.com/muhammadhusnainshahid"
             target="_blank"
             className="hover:text-black"
           >
             <FaGithub />
           </a>
           <a
-            href="https://twitter.com"
+            href="https://www.facebook.com/share/1CBPwfZBcp/"
             target="_blank"
             className="hover:text-blue-400"
           >
@@ -182,7 +182,7 @@ function MethodsView() {
           </div>
         </div>
         <h4 className="font-bold text-gray-800 mb-1">Phone</h4>
-        <p className="text-gray-600 text-sm">+92-3175422689</p>
+        <p className="text-gray-600 text-sm">+92-3185417997</p>
       </div>
     </div>
   );

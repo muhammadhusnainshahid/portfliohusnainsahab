@@ -26,7 +26,7 @@ export default function Hero() {
       {/* Left Content */}
       <div className="md:w-1/2 space-y-5 text-center md:text-left">
         <h1 className="text-2xl md:text-3xl font-bold text-gray-800">
-          Hi, I’m <span className="text-blue-600">Usama Mehboob</span>
+          Hi, I’m <span className="text-blue-600">Husnain Shahid</span>
         </h1>
         <h2 className="text-md md:text-md font-semibold text-gray-600">
           <Typewriter
@@ -54,20 +54,20 @@ export default function Hero() {
         <div className="flex gap-4 justify-center md:justify-start items-center text-blue-600 text-xl">
           <p className="text-gray-800 font-bold text-xs md:text-sm">Follow me on:</p>
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/muhammad-husnain-shahid-36b34b26b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
             target="_blank"
             rel="noopener noreferrer"
           >
             <FaLinkedin />
           </a>
           <a
-            href="https://github.com"
+            href="https://github.com/muhammadhusnainshahid"
             target="_blank"
             rel="noopener noreferrer"
           >
             <FaGithub />
           </a>
-          <a href="usama.bsit603@iiu.edu.pk">
+          <a href="muhammad.bsit580@iiu.edu.pk">
             <FaEnvelope />
           </a>
         </div>
@@ -76,7 +76,7 @@ export default function Hero() {
         <div className="flex gap-4 flex-wrap justify-center md:justify-start mt-6">
           {/* Download CV Button */}
           <a
-            href="/usamacv.pdf"
+            href="/husnainre.pdf"
             download
             className="text-sm flex items-center gap-2 px-8 py-3 bg-blue-600 text-white rounded-xl font-semibold shadow-lg hover:bg-blue-700 transition duration-300"
           >

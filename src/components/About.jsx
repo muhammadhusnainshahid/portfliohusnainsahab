@@ -9,6 +9,7 @@ import {
   FaGithub,
   FaTwitter,
   FaDownload,
+  FaFacebook,
 } from "react-icons/fa";
 import InfoCard from "./InfoCard";
 import { motion, useAnimation } from "framer-motion";
@@ -60,7 +61,7 @@ export default function About() {
         >
           <img
             src="/profile.jpg"
-            alt="Usama"
+            alt="Muhammad Husnain Shahid"
             className="rounded-lg shadow-lg w-40 h-40  md:w-72 md:h-72 object-cover"
           />
         </motion.div>
@@ -77,7 +78,7 @@ export default function About() {
           <InfoCard
             icon={<FaUserAlt />}
             title="Bio"
-            text="Enthusiastic and detail-oriented Information Technology professional with 2 years of Flutter experience and growing expertise in React development, dedicated to creating innovative, scalable, and user-centric Flutter applications."
+            text="Enthusiastic and detail-oriented Information Technology professional with 1 years of Flutter experience and growing expertise in React development, dedicated to creating innovative, scalable, and user-centric Flutter applications."
             color="blue"
           />
 
@@ -103,9 +104,9 @@ export default function About() {
             title="Contact"
             text={
               <>
-                Email: usama.bsit603@iiu.edu.pk <br />
-                Phone: +92-317-5422689<br />
-                LinkedIn: linkedin.com/in/usama-m
+                Email: muhammad.bsit580@iiu.edu.pk <br />
+                Phone: +92-318-541799-7<br />
+                LinkedIn: linkedin.com/in/muhammad-husnain-shahid
               </>
             }
             color="purple"
@@ -131,7 +132,7 @@ export default function About() {
             <p className="text-gray-800 font-bold text-sm">Follow me on:</p>
             <div className="flex">
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/muhammad-husnain-shahid-36b34b26b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center rounded-full w-8 h-8 shadow text-center hover:bg-black hover:text-white hover:scale-110 transform transition duration-300"
@@ -139,7 +140,7 @@ export default function About() {
                 <FaLinkedin />
               </a>
               <a
-                href="https://github.com"
+                href="https://github.com/muhammadhusnainshahid"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center rounded-full w-8 h-8 shadow text-center hover:bg-black hover:text-white transform transition duration-300"
@@ -147,12 +148,12 @@ export default function About() {
                 <FaGithub />
               </a>
               <a
-                href="https://twitter.com"
+                href="https://www.facebook.com/share/1CBPwfZBcp/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center rounded-full w-8 h-8 shadow text-center hover:bg-black hover:text-white transform transition duration-300"
               >
-                <FaTwitter />
+                <FaFacebook />
               </a>
             </div>
 
