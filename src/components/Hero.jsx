@@ -26,7 +26,7 @@ export default function Hero() {
       {/* Left Content */}
       <div className="md:w-1/2 space-y-5 text-center md:text-left">
         <h1 className="text-2xl md:text-3xl font-bold text-gray-800">
-          Hi, I’m <span className="text-blue-600">Husnain Shahid</span>
+          Hi, I’m <span className="text-blue-600">Muhammad Husnain Shahid</span>
         </h1>
         <h2 className="text-md md:text-md font-semibold text-gray-600">
           <Typewriter
@@ -138,8 +138,8 @@ export default function Hero() {
       <div className="md:w-1/2 mb-8 md:mb-0 flex justify-center">
         <div className="group md:h-72 md:w-72 overflow-hidden rounded-full border-4 border-blue-300 shadow-lg w-40 h-40 mt-5 md:mb-5">
           <img
-            src="/profile.jpg"
-            alt="Usama"
+            src="/profile.jpeg"
+            alt="Muhammad Husnain Shahid"
             className="w-40 h-40 md:h-72 md:w-72 object-cover rounded-full transform transition duration-500 group-hover:scale-110"
           />
         </div>

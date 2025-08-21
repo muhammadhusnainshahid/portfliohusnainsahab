@@ -60,7 +60,7 @@ export default function About() {
           whileHover={{ rotate: [0, 2, -2, 2, -2, 0] }}
         >
           <img
-            src="/profile.jpg"
+            src="/profile.jpeg"
             alt="Muhammad Husnain Shahid"
             className="rounded-lg shadow-lg w-40 h-40  md:w-72 md:h-72 object-cover"
           />
@@ -158,7 +158,7 @@ export default function About() {
             </div>
 
             <a
-              href="/usamacv.pdf"
+              href="/husnainre.pdf"
               download
               className="flex items-center gap-2 text-sm bg-black text-white px-6 py-2 rounded-lg shadow hover:bg-white hover:text-black border  text-center transition duration-300 hover:scale-105"
             >
