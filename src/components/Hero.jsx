@@ -31,9 +31,9 @@ export default function Hero() {
         <h2 className="text-md md:text-md font-semibold text-gray-600">
           <Typewriter
             words={[
+              "IT Professional",
               "Flutter Developer",
               "Web Developer",
-              "IT Professional",
               "Digital Marketing",
             ]}
             loop={true}
