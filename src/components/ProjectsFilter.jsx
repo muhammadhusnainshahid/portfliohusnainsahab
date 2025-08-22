@@ -1,3 +1,4 @@
+
 "use client";
 import { useState } from "react";
 import {
@@ -8,9 +9,9 @@ import {
   FaExternalLinkAlt,
   FaCubes,
   FaLayerGroup,
+  FaMobileAlt,
 } from "react-icons/fa";
 import React from "react";
-import { motion, useInView, AnimatePresence } from "framer-motion";
 
 const allProjects = [
   {
@@ -19,18 +20,8 @@ const allProjects = [
     description:
       "Modern pizza ordering website with size, flavors, and cart system.",
     tech: ["React", "Tailwind", "Framer Motion", "Context API"],
-    github: "https://github.com/HameyDev/mern-food-app",
     live: "https://mern-food-app-frontend-0meh.onrender.com/",
     icon: <FaLaptopCode />,
-  },
-  {
-    title: "Event Booking App",
-    category: "Frontend",
-    description: "Book and manage events with full CRUD and admin panel.",
-    tech: ["React", "Node.js", "Express", "MongoDB"],
-    github: "https://github.com/yourname/event-booking",
-    live: "#",
-    icon: <FaCode />,
   },
   {
     title: "Nutritionist Website",
@@ -38,7 +29,6 @@ const allProjects = [
     description:
       "Clients submit diet plans & book consultations with backend storage.",
     tech: ["Next.js", "Tailwind", "MongoDB", "Node.js"],
-    github: "https://github.com/HameyDev/mern-nutrition",
     live: "https://nutricare-6flv.onrender.com/",
     icon: <FaCode />,
   },
@@ -50,6 +40,32 @@ const allProjects = [
     github: "https://github.com/yourname/api-auth",
     live: "#",
     icon: <FaServer />,
+  },
+
+  // ==== Flutter Projects (APK downloads) ====
+  {
+    title: "Flutter ToDo App",
+    category: "Frontend",
+    description: "Task manager app with categories, reminders, and local storage.",
+    tech: ["Flutter", "Dart", "Provider"],
+    apk: "/todo-app.apk", // put apk in /public/todo-app.apk
+    icon: <FaMobileAlt />,
+  },
+  {
+    title: "Flutter Nutrition App",
+    category: "Frontend",
+    description: "Track daily calories, meals, and water intake.",
+    tech: ["Flutter", "Dart", "Hive"],
+    apk: "/nutrition-app.apk", // /public/nutrition-app.apk
+    icon: <FaMobileAlt />,
+  },
+  {
+    title: "Flutter Fitness App",
+    category: "Frontend",
+    description: "Workout plans, exercises, and progress tracking.",
+    tech: ["Flutter", "Dart", "Firebase"],
+    apk: "/fitness-app.apk", // /public/fitness-app.apk
+    icon: <FaMobileAlt />,
   },
 ];
 
@@ -75,7 +91,9 @@ export default function ProjectsFilter() {
       <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-2">
         My <span className="text-blue-600">Projects</span>
       </h2>
-      <p className="text-center text-sm md:text-md text-gray-500 mb-10">Explore by category</p>
+      <p className="text-center text-sm md:text-md text-gray-500 mb-10">
+        Explore by category
+      </p>
 
       <div className="relative w-fit mx-auto mb-12 bg-gray-100 p-1 rounded-full shadow-inner flex">
         {/* Sliding Background */}
@@ -100,7 +118,6 @@ export default function ProjectsFilter() {
               activeCategory === cat ? "text-white" : "text-gray-800"
             }`}
           >
-            {/* Clone icon to apply color */}
             {React.cloneElement(iconMap[cat], {
               className: `w-5 h-5 ${
                 activeCategory === cat ? "text-white" : "text-blue-600"
@@ -144,16 +161,18 @@ export default function ProjectsFilter() {
             </div>
 
             {/* Buttons */}
-            <div className="flex justify-center gap-4 mt-auto">
-              <a
-                href={project.github}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-1 text-sm text-gray-700 hover:text-black"
-              >
-                <FaGithub /> GitHub
-              </a>
-              {project.live !== "#" && (
+            <div className="flex justify-center gap-4 mt-auto flex-wrap">
+              {project.github && (
+                <a
+                  href={project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-1 text-sm text-gray-700 hover:text-black"
+                >
+                  <FaGithub /> GitHub
+                </a>
+              )}
+              {project.live && project.live !== "#" && (
                 <a
                   href={project.live}
                   target="_blank"
@@ -163,10 +182,19 @@ export default function ProjectsFilter() {
                   <FaExternalLinkAlt /> Live Demo
                 </a>
               )}
+              {project.apk && (
+                <a
+                  href={project.apk}
+                  download
+                  className="flex items-center gap-1 text-sm text-green-600 hover:underline"
+                >
+                  <FaMobileAlt /> Download APK
+                </a>
+              )}
             </div>
           </div>
         ))}
       </div>
     </section>
   );
-}
+};
