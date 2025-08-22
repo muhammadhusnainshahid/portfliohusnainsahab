@@ -1,12 +1,11 @@
 "use client";
 import { useState } from "react";
 import {
-  FaFlutter,
+  FaMobile,
   FaFire,
   FaPalette,
   FaDatabase,
   FaRocket,
-  FaMobile,
   FaSearch,
   FaChartLine,
   FaCode,
@@ -35,7 +34,7 @@ export default function Experience() {
       position: "Flutter Developer",
       location: "Islamabad, Pakistan",
       period: "August 2024 - December 2024",
-      icon: <FaFlutter className="text-blue-500" />,
+      icon: <FaMobile className="text-blue-500" />,
       tasks: [
         { 
           text: "Built responsive mobile apps using Flutter", 
@@ -66,7 +65,7 @@ export default function Experience() {
       position: "Flutter Developer",
       location: "Rawalpindi, Pakistan",
       period: "May 2024 - July 2024",
-      icon: <FaFlutter className="text-blue-500" />,
+      icon: <FaMobile className="text-blue-500" />,
       tasks: [
         { 
           text: "Designed and implemented intuitive, user-friendly interfaces", 
