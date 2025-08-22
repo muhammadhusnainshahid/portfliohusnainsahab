@@ -15,7 +15,8 @@ import {
   FaChevronDown,
   FaHeart,
   FaRocket,
-  FaLightbulb
+  FaLightbulb,
+  FaFacebook
 } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { Typewriter } from "react-simple-typewriter";
@@ -182,13 +183,13 @@ export default function Hero() {
                 <motion.a
                   whileHover={{ y: -5, scale: 1.1 }}
                   whileTap={{ scale: 0.95 }}
-                  href="https://www.instagram.com"
+                  href="https://www.facebook.com/share/1CBPwfZBcp/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-2 rounded-full bg-white shadow-md hover:shadow-lg transition-all duration-300"
-                  aria-label="Instagram Profile"
+                  aria-label="Facebook Profile"
                 >
-                  <FaInstagram />
+                  <FaFacebook />
                 </motion.a>
                 <motion.a
                   whileHover={{ y: -5, scale: 1.1 }}
@@ -268,7 +269,7 @@ export default function Hero() {
                     <FaCheckCircle className="text-lg md:text-xl" />
                   </div>
                   <div>
-                    <p className="text-xl md:text-2xl font-bold text-gray-900">10+</p>
+                    <p className="text-xl md:text-2xl font-bold text-gray-900">30+</p>
                     <p className="text-gray-600 text-xs md:text-sm">Projects Completed</p>
                   </div>
                 </motion.div>
@@ -282,7 +283,7 @@ export default function Hero() {
                     <FaSmile className="text-lg md:text-xl" />
                   </div>
                   <div>
-                    <p className="text-xl md:text-2xl font-bold text-gray-900">10+</p>
+                    <p className="text-xl md:text-2xl font-bold text-gray-900">15+</p>
                     <p className="text-gray-600 text-xs md:text-sm">Happy Clients</p>
                   </div>
                 </motion.div>

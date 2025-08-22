@@ -4,6 +4,7 @@ import Education from "@/components/Education";
 import SkillsTabs from "@/components/SkillsTabs";
 import ProjectsFilter from "@/components/ProjectsFilter";
 import Contact from "@/components/Contact";
+import Experience from "@/components/Experience";
 
 export default function Home() {
   return (
@@ -26,6 +27,10 @@ export default function Home() {
 
       <section id="projects" className="py-10">
         <ProjectsFilter />
+      </section>
+      
+      <section id="Experience" className="py-10">
+        <Experience />
       </section>
 
       <section id="contact" className="py-10">

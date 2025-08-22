@@ -87,7 +87,8 @@ export default function Education() {
               title="Bachelor of Information Technology"
               degree="Information Technology"
               institution="International Islamic University"
-              description="Passionate and detail-oriented IT developer with a strong foundation in Flutter development. Experienced in building responsive, high-performance applications using modern technologies like Flutter, C++, Data Structures, and Object Oriented Programming."              location="Islamabad, Pakistan"
+              description="Passionate and detail-oriented IT developer with a strong foundation in Flutter development. Experienced in building responsive, high-performance applications using modern technologies like Flutter, C++, Data Structures, and Object Oriented Programming."
+              location="Islamabad, Pakistan"
               years="2020 - 2024"
               gpa="3.14/4.00"
               status="Graduated"
@@ -112,7 +113,7 @@ export default function Education() {
             <EduCard
               icon={<FaCode />}
               title="Flutter Developer"
-              degree="Intensive Flutter Bootcamp"
+              degree="Intensive Flutter Camp"
               institution="Smart Tec – Online"
               description="Passionate and detail-oriented Flutter developer. Experienced in building responsive, high-performance cross-platform applications using Flutter, Dart, Firebase, SharedPreferences Storage, and Hive."
               location="Remote"
@@ -212,7 +213,7 @@ export default function Education() {
             ].map((cert, i) => (
               <div
                 key={i}
-                className="bg-white p-4 rounded-lg shadow flex flex-col items-center text-center space-y-3 transform transition-all duration-300 hover:-translate-y-1 hover:shadow-black"
+                className="bg-white p-4 rounded-lg shadow flex flex-col items-center text-center space-y-3 transform transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
               >
                 <div>{cert.logo}</div>
                 <h3 className="font-semibold text-gray-800 text-sm">
@@ -229,4 +230,4 @@ export default function Education() {
       </AnimatePresence>
     </motion.section>
   );
-}
+};
