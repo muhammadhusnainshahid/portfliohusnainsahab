@@ -110,26 +110,23 @@ export default function Education() {
               ]}
             />
             {/* Bootcamp Card */}
-          EduCard(
-  icon: Icon(Icons.code), // Using Flutter's built-in icons
-  title: "Flutter Developer",
-  degree: "Intensive Bootcamp", 
-  institution: "Flutter Bootcamp – Online",
-  description: "Passionate and detail-oriented software developer with a strong foundation in Flutter development. Experienced in building responsive, high-performance cross-platform applications using Dart, Flutter framework, Firebase, and state management solutions like Provider and Bloc.",
-  location: "Remote",
-  years: "2024",
-  gpa: "Outstanding",
-  status: "Certified",
-  courses: [
-    "Dart Programming",
-    "Flutter Framework",
-    "Firebase Integration",
-    "State Management (Provider/Bloc)",
-    "RESTful APIs",
-    "App Deployment",
-    "UI/UX Design Principles",
-  ],
-)
+         <EduCard
+              icon={<FaCode />}
+              title="Flutter Developer"
+              degree="Intensive Bootcamp"
+              institution="MERN Bootcamp – Online"
+              description="Passionate and detail-oriented software developer with a strong foundation in Flutter development. Experienced in building responsive, high-performance applications using modern technologies like Flutter Dart React.js, Next.js, Node.js, and MongoDB."
+              location="Remote"
+              years="2024"
+              gpa="Outstanding"
+              status="Certified"
+              courses={[
+                "React.js",
+                "Node.js",
+                "MongoDB",
+                "Express.js",
+                "Deployment",
+              ]}
               achievements={[
                 "Top 10% in class",
                 "Built and deployed 5 projects",
