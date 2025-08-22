@@ -367,7 +367,7 @@ export default function Hero() {
                         <div className="p-1 bg-green-100 rounded-lg text-green-600">
                           <FaCodeBranch className="text-xs" />
                         </div>
-                        <p className="text-xs font-bold text-gray-800">IT Expert</p>
+                        <p className="text-xs font-bold text-gray-800">IT Specialist</p>
                       </div>
                     </motion.div>
                     
@@ -381,7 +381,7 @@ export default function Hero() {
                         <div className="p-1 bg-blue-100 rounded-lg text-blue-600">
                           <FaCheckCircle className="text-xs" />
                         </div>
-                        <p className="text-xs font-bold text-gray-800">Flutter Specialist</p>
+                        <p className="text-xs font-bold text-gray-800">Flutter Expect</p>
                       </div>
                     </motion.div>
                   </>
