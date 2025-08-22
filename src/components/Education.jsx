@@ -11,7 +11,13 @@ import {
   FaAws,
   FaMicrosoft,
   FaLinux,
+  FaCloud,
+  FaDatabase,
+  FaChartLine,
+  FaSearch,
 } from "react-icons/fa";
+import { SiMongodb, SiExpress, SiNodedotjs } from "react-icons/si";
+import { SiFlutter } from "react-icons/si";
 import EduCard from "./EduCard";
 import { motion, useInView, AnimatePresence } from "framer-motion";
 
@@ -210,6 +216,77 @@ export default function Education() {
                 provider: "Coursera",
                 year: "2021",
               },
+              // New certifications
+              {
+                logo: (
+                  <FaCode className="bg-[#8A2BE2] w-8 h-8 rounded-full p-1 text-white" />
+                ),
+                title: "App Development",
+                provider: "Hazza Institute",
+                year: "2023",
+              },
+              {
+                logo: (
+                  <FaCloud className="bg-[#20B2AA] w-8 h-8 rounded-full p-1 text-white" />
+                ),
+                title: "Cloud Solution Architecture",
+                provider: "iiui",
+                year: "2023",
+              },
+              {
+                logo: (
+                  <div className="bg-[#68A063] w-8 h-8 rounded-full p-1 flex items-center justify-center">
+                    <SiMongodb className="text-white text-lg" />
+                    <SiExpress className="text-white text-lg -ml-1" />
+                    <SiNodedotjs className="text-white text-lg -ml-1" />
+                    <FaReact className="text-white text-lg -ml-1" />
+                  </div>
+                ),
+                title: "MERN Stack (Basic)",
+                provider: "NFTP",
+                year: "2022",
+              },
+              {
+                logo: (
+                  <FaChartLine className="bg-[#FF6B6B] w-8 h-8 rounded-full p-1 text-white" />
+                ),
+                title: "Freelancing",
+                provider: "Upwork",
+                year: "2021",
+              },
+              {
+                logo: (
+                  <FaSearch className="bg-[#4ECDC4] w-8 h-8 rounded-full p-1 text-white" />
+                ),
+                title: "SEO",
+                provider: "DigiSkill",
+                year: "2023",
+              },
+              {
+                logo: (
+                  <FaDatabase className="bg-[#45B7D1] w-8 h-8 rounded-full p-1 text-white" />
+                ),
+                title: "Data Analyst",
+                provider: "DigiSkill",
+                year: "2024",
+              },
+              {
+  logo: (
+    <SiFlutter className="bg-blue-500 w-8 h-8 rounded-full p-1 text-white" />
+  ),
+  title: "Flutter Development",
+  provider: "NFTP",
+  year: "2023",
+},
+            
+              {
+                logo: (
+                  <FaChartLine className="bg-[#F9A826] w-8 h-8 rounded-full p-1 text-white" />
+                ),
+                title: "Data Marketing",
+                provider: "DigiSkill",
+                year: "2021",
+              },
             ].map((cert, i) => (
               <div
                 key={i}
@@ -230,4 +307,4 @@ export default function Education() {
       </AnimatePresence>
     </motion.section>
   );
-};
+}
