@@ -1,8 +1,7 @@
 "use client";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import {
   FaGraduationCap,
-  FaCertificate,
   FaAward,
   FaCode,
   FaFacebookF,
@@ -15,7 +14,6 @@ import {
 } from "react-icons/fa";
 import EduCard from "./EduCard";
 import { motion, useInView, AnimatePresence } from "framer-motion";
-import { useRef } from "react";
 
 export default function Education() {
   const [activeTab, setActiveTab] = useState("formal");
@@ -39,20 +37,19 @@ export default function Education() {
         flutter development and Digital marketing
       </p>
 
+      {/* Tabs */}
       <motion.div
-        initial={{ opacity: 0, y: 50 }} // Starts lower (y: 50)
-        animate={{ opacity: 1, y: 0 }} // Animates to normal position
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
         className="relative w-fit mx-auto mb-8 bg-gray-100 p-1 rounded-full shadow-inner flex"
       >
-        {/* Sliding Background */}
         <span
           className={`absolute top-1 left-1 w-1/2 h-10 rounded-full bg-blue-600 transition-all duration-300 ${
             activeTab === "cert" ? "translate-x-full" : "translate-x-0"
           }`}
         ></span>
 
-        {/* Buttons */}
         <button
           onClick={() => setActiveTab("formal")}
           className={`relative z-10 w-[140px] md:w-40 h-10 text-xs md:text-sm font-medium rounded-full transition-all duration-300 ${
@@ -64,7 +61,7 @@ export default function Education() {
 
         <button
           onClick={() => setActiveTab("cert")}
-          className={`relative z-10 w-[140px] md:40 h-10 text-xs md:text-sm font-medium rounded-full transition-all duration-300 flex items-center justify-center gap-2 ${
+          className={`relative z-10 w-[140px] md:w-40 h-10 text-xs md:text-sm font-medium rounded-full transition-all duration-300 flex items-center justify-center gap-2 ${
             activeTab === "cert" ? "text-white" : "text-gray-800"
           }`}
         >
@@ -73,8 +70,8 @@ export default function Education() {
         </button>
       </motion.div>
 
+      {/* Content */}
       <AnimatePresence mode="wait">
-        {/* Content */}
         {activeTab === "formal" ? (
           <motion.div
             key="formal"
@@ -90,7 +87,7 @@ export default function Education() {
               title="Bachelor of Information Technology"
               degree="Information Technology"
               institution="International Islamic University"
-              description="Passionate and detail-oriented IT developer with a strong foundation in Flutter development. Experienced in building responsive, high-performance applications using modern technologies like Flutter,React.js, Next.js, Node.js, and MongoDB."
+              description="Passionate and detail-oriented IT developer with a strong foundation in Flutter development. Experienced in building responsive, high-performance applications using modern technologies like Flutter, React.js, Next.js, Node.js, and MongoDB."
               location="Islamabad, Pakistan"
               years="2020 - 2024"
               gpa="3.14/4.00"
@@ -98,12 +95,12 @@ export default function Education() {
               courses={[
                 "C++",
                 "Data Structures",
-                "Object oriented Programming",
+                "Object Oriented Programming",
                 "Algorithms",
                 "Software Engineering",
                 "Mobile App Programming",
                 "Web Development",
-                "Flutter Developer"
+                "Flutter Developer",
               ]}
               achievements={[
                 "Dean's List for 6 Semesters",
@@ -111,34 +108,33 @@ export default function Education() {
                 "2nd Place in Hackathon",
               ]}
             />
-            {/* Bootcamp Card */}
-            EduCard(
-  icon: FontAwesomeIcons.code, // from font_awesome_flutter package
-  title: "Flutter Developer",
-  degree: "Intensive Flutter Bootcamp",
-  institution: "Smart Tec – Online",
-  description:
-      "Passionate and detail-oriented Flutter developer. Experienced in building responsive, high-performance cross-platform applications using Flutter, Dart, Firebase,SharedPreferences Storage and Hive.",
-  location: "Remote",
-  years: "2024",
-  gpa: "Outstanding",
-  status: "Certified",
-  courses: [
-    "Flutter & Dart",
-    "Firebase Integration",
-    "REST API Development",
-    "State Management (Provider, BLoC)",
-    "Deployment (Play Store / App Store)",
-    "Local Database (Hive)",
-  "SharedPreferences Storage",
-  ],
-  achievements: [
-    "Top 10% in class",
-    "Built and deployed 15+ mobile apps",
-    "Mentored junior Flutter developers",
-  ],
-),
 
+            {/* Flutter Bootcamp Card */}
+            <EduCard
+              icon={<FaCode />}
+              title="Flutter Developer"
+              degree="Intensive Flutter Bootcamp"
+              institution="Smart Tec – Online"
+              description="Passionate and detail-oriented Flutter developer. Experienced in building responsive, high-performance cross-platform applications using Flutter, Dart, Firebase, SharedPreferences Storage, and Hive."
+              location="Remote"
+              years="2024"
+              gpa="Outstanding"
+              status="Certified"
+              courses={[
+                "Flutter & Dart",
+                "Firebase Integration",
+                "REST API Development",
+                "State Management (Provider, BLoC)",
+                "Deployment (Play Store / App Store)",
+                "Local Database (Hive)",
+                "SharedPreferences Storage",
+              ]}
+              achievements={[
+                "Top 10% in class",
+                "Built and deployed 15+ mobile apps",
+                "Mentored junior Flutter developers",
+              ]}
+            />
           </motion.div>
         ) : (
           <motion.div
@@ -147,7 +143,7 @@ export default function Education() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.5 }}
-            className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 "
+            className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6"
           >
             {[
               {
@@ -220,7 +216,6 @@ export default function Education() {
                 className="bg-white p-4 rounded-lg shadow flex flex-col items-center text-center space-y-3 transform transition-all duration-300 hover:-translate-y-1 hover:shadow-black"
               >
                 <div>{cert.logo}</div>
-
                 <h3 className="font-semibold text-gray-800 text-sm">
                   {cert.title}
                 </h3>
