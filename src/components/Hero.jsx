@@ -34,7 +34,7 @@ export default function Hero() {
               "Flutter Developer",
               "Web Developer",
               "IT Professional",
-              "React Developer",
+              "Digital Marketing",
             ]}
             loop={true}
             cursor
@@ -127,7 +127,7 @@ export default function Hero() {
               <FaSmile />
             </div>
             <div>
-              <p className="text-sm font-bold text-blue-600">5+</p>
+              <p className="text-sm font-bold text-blue-600">10+</p>
               <p className="text-gray-600 text-[10px]">Happy Clients</p>
             </div>
           </div>
