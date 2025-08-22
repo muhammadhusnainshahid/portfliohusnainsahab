@@ -13,6 +13,8 @@ import {
   FaJs,
   FaGitAlt,
   FaGithub,
+  FaMobile,
+  FaFire,
   FaBrain,
   FaComments,
   FaUsers,
@@ -27,9 +29,9 @@ import {
   FaPaintBrush,
   FaRocketchat,
 } from "react-icons/fa";
+import { SiFlutter, SiDart, SiFirebase, SiHive, SiSqlite } from "react-icons/si";
 import React from "react";
 import { motion, useInView, AnimatePresence } from "framer-motion";
-
 export default function SkillsTabs() {
   const [activeTab, setActiveTab] = useState("technical");
   const [animate, setAnimate] = useState(false);
@@ -55,35 +57,44 @@ export default function SkillsTabs() {
       icon: <FaTools className="text-blue-600" />,
     },
   };
-
-  const technicalSkills = [
-    {
-      category: "Frontend Development",
-      icon: FaReact, // Category icon
-      skills: [
-        { name: "React", icon: FaReact, percent: 90 },
-        { name: "HTML", icon: FaHtml5, percent: 95 },
-        { name: "CSS", icon: FaCss3Alt, percent: 90 },
-        { name: "JavaScript", icon: FaJs, percent: 88 },
-      ],
-    },
-    {
-      category: "Backend Development",
-      icon: FaNodeJs,
-      skills: [{ name: "Node.js", icon: FaNodeJs, percent: 85 }],
-    },
-    {
-      category: "Database & Cloud",
-      icon: FaCloud,
-      skills: [
-        { name: "MongoDB", icon: FaDatabase, percent: 85 },
-        { name: "Git", icon: FaGitAlt, percent: 90 },
-        { name: "GitHub", icon: FaGithub, percent: 88 },
-      ],
-    },
-  ];
-
-  const softSkills = [
+const technicalSkills = [
+  {
+    category: "Frontend Development",
+    icon: FaReact,
+    skills: [
+      { name: "React", icon: FaReact, percent: 70 },
+      { name: "HTML", icon: FaHtml5, percent: 95 },
+      { name: "CSS", icon: FaCss3Alt, percent: 90 },
+      { name: "JavaScript", icon: FaJs, percent: 78 },
+    ],
+  },
+  {
+    category: "Mobile Development",
+    icon: FaMobile,
+    skills: [
+      { name: "Flutter", icon: SiFlutter, percent: 90 },
+      { name: "Dart", icon: SiDart, percent: 88 },
+      { name: "Firebase", icon: SiFirebase, percent: 85 },
+      { name: "REST APIs", icon: FaServer, percent: 82 },
+      { name: "Hive", icon: SiHive, percent: 80 },
+      { name: "SQLite", icon: SiSqlite, percent: 78 },
+    ],
+  },
+  {
+    category: "Backend Development",
+    icon: FaNodeJs,
+    skills: [{ name: "Node.js", icon: FaNodeJs, percent: 79 }],
+  },
+  {
+    category: "Database & Cloud",
+    icon: FaCloud,
+    skills: [
+      { name: "MongoDB", icon: FaDatabase, percent: 85 },
+      { name: "Git", icon: FaGitAlt, percent: 90 },
+      { name: "GitHub", icon: FaGithub, percent: 88 },
+    ],
+  },
+];  const softSkills = [
     {
       name: "Problem Solving",
       icon: FaBrain,
