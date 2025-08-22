@@ -105,7 +105,7 @@ export default function Hero() {
               <FaCalendarAlt />
             </div>
             <div>
-              <p className="text-sm font-bold text-blue-600">2+</p>
+              <p className="text-sm font-bold text-blue-600">1+</p>
               <p className="text-gray-600 text-[10px]">Years Experience</p>
             </div>
           </div>
