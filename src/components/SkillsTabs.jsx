@@ -74,10 +74,10 @@ const technicalSkills = [
     category: "Frontend Development",
     icon: FaReact,
     skills: [
-      { name: "React", icon: FaReact, percent: 70 },
-      { name: "HTML", icon: FaHtml5, percent: 95 },
-      { name: "CSS", icon: FaCss3Alt, percent: 90 },
-      { name: "JavaScript", icon: FaJs, percent: 78 },
+      { name: "React", icon: FaReact, percent: 50 },
+      { name: "HTML", icon: FaHtml5, percent: 85 },
+      { name: "CSS", icon: FaCss3Alt, percent: 80 },
+      { name: "JavaScript", icon: FaJs, percent: 65 },
     ],
   },
   {
@@ -89,7 +89,7 @@ const technicalSkills = [
     category: "Database & Cloud",
     icon: FaCloud,
     skills: [
-      { name: "MongoDB", icon: FaDatabase, percent: 85 },
+      { name: "MongoDB", icon: FaDatabase, percent: 65 },
       { name: "Git", icon: FaGitAlt, percent: 90 },
       { name: "GitHub", icon: FaGithub, percent: 88 },
     ],
