@@ -18,6 +18,7 @@ import {
   FaBrain,
   FaComments,
   FaUsers,
+  FaJava,
   FaSyncAlt,
   FaClock,
   FaCrown,
