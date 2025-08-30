@@ -355,38 +355,43 @@ export default function Hero() {
                   <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
                 </motion.div>
                 
-                {/* Floating elements - hidden on smallest screens */}
-                {!isMobile && (
-                  <>
-                    <motion.div 
-                      initial={{ y: 0 }}
-                      animate={{ y: [-10, 10, -10] }}
-                      transition={{ duration: 4, repeat: Infinity }}
-                      className="absolute -top-3 -right-3 bg-white/90 backdrop-blur-sm p-2 rounded-xl shadow-lg border border-gray-100"
-                    >
-                      <div className="flex items-center gap-2">
-                        <div className="p-1 bg-green-100 rounded-lg text-green-600">
-                          <FaCodeBranch className="text-xs" />
-                        </div>
-                        <p className="text-xs font-bold text-gray-800">IT Specialist</p>
-                      </div>
-                    </motion.div>
-                    
-                    <motion.div 
-                      initial={{ y: 0 }}
-                      animate={{ y: [10, -10, 10] }}
-                      transition={{ duration: 5, repeat: Infinity, delay: 1 }}
-                      className="absolute -bottom-3 -left-3 bg-white/90 backdrop-blur-sm p-2 rounded-xl shadow-lg border border-gray-100"
-                    >
-                      <div className="flex items-center gap-2">
-                        <div className="p-1 bg-blue-100 rounded-lg text-blue-600">
-                          <FaCheckCircle className="text-xs" />
-                        </div>
-                        <p className="text-xs font-bold text-gray-800">Flutter Expect</p>
-                      </div>
-                    </motion.div>
-                  </>
-                )}
+               {/* Floating elements - now visible on both mobile and laptop */}
+<>
+  <motion.div 
+    initial={{ y: 0 }}
+    animate={{ y: [-10, 10, -10] }}
+    transition={{ duration: 4, repeat: Infinity }}
+    className="absolute -top-3 -right-3 sm:-top-4 sm:-right-4 bg-white/90 backdrop-blur-sm 
+               p-1 sm:p-2 rounded-lg sm:rounded-xl shadow-lg border border-gray-100"
+  >
+    <div className="flex items-center gap-1 sm:gap-2">
+      <div className="p-1 bg-green-100 rounded-md sm:rounded-lg text-green-600">
+        <FaCodeBranch className="text-[10px] sm:text-xs md:text-sm" />
+      </div>
+      <p className="text-[10px] sm:text-xs md:text-sm font-bold text-gray-800">
+        IT Specialist
+      </p>
+    </div>
+  </motion.div>
+
+  <motion.div 
+    initial={{ y: 0 }}
+    animate={{ y: [10, -10, 10] }}
+    transition={{ duration: 5, repeat: Infinity, delay: 1 }}
+    className="absolute -bottom-3 -left-3 sm:-bottom-4 sm:-left-4 bg-white/90 backdrop-blur-sm 
+               p-1 sm:p-2 rounded-lg sm:rounded-xl shadow-lg border border-gray-100"
+  >
+    <div className="flex items-center gap-1 sm:gap-2">
+      <div className="p-1 bg-blue-100 rounded-md sm:rounded-lg text-blue-600">
+        <FaCheckCircle className="text-[10px] sm:text-xs md:text-sm" />
+      </div>
+      <p className="text-[10px] sm:text-xs md:text-sm font-bold text-gray-800">
+        Flutter Expert
+      </p>
+    </div>
+  </motion.div>
+</>
+
               </div>
             </div>
           </motion.div>
