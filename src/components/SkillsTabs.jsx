@@ -65,9 +65,7 @@ const technicalSkills = [
       { name: "Flutter", icon: SiFlutter, percent: 90 },
       { name: "Dart", icon: SiDart, percent: 88 },
       { name: "Firebase", icon: SiFirebase, percent: 85 },
-      { name: "REST APIs", icon: FaServer, percent: 82 },
-      { name: "Hive", icon: SiHive, percent: 80 },
-      { name: "SQLite", icon: SiSqlite, percent: 78 },
+      { name: "Java", icon: FaJava, percent: 80 },
     ],
   },
   {
@@ -83,7 +81,11 @@ const technicalSkills = [
   {
     category: "Backend Development",
     icon: FaNodeJs,
-    skills: [{ name: "Node.js", icon: FaNodeJs, percent: 79 }],
+    skills: [
+      { name: "REST APIs", icon: FaServer, percent: 82 },
+      { name: "Hive", icon: SiHive, percent: 80 },
+      { name: "SQLite", icon: SiSqlite, percent: 78 },
+      ],
   },
   {
     category: "Database & Cloud",
