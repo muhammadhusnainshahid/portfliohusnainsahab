@@ -59,16 +59,6 @@ export default function SkillsTabs() {
   };
 const technicalSkills = [
   {
-    category: "Frontend Development",
-    icon: FaReact,
-    skills: [
-      { name: "React", icon: FaReact, percent: 70 },
-      { name: "HTML", icon: FaHtml5, percent: 95 },
-      { name: "CSS", icon: FaCss3Alt, percent: 90 },
-      { name: "JavaScript", icon: FaJs, percent: 78 },
-    ],
-  },
-  {
     category: "Mobile Development",
     icon: FaMobile,
     skills: [
@@ -78,6 +68,16 @@ const technicalSkills = [
       { name: "REST APIs", icon: FaServer, percent: 82 },
       { name: "Hive", icon: SiHive, percent: 80 },
       { name: "SQLite", icon: SiSqlite, percent: 78 },
+    ],
+  },
+  {
+    category: "Frontend Development",
+    icon: FaReact,
+    skills: [
+      { name: "React", icon: FaReact, percent: 70 },
+      { name: "HTML", icon: FaHtml5, percent: 95 },
+      { name: "CSS", icon: FaCss3Alt, percent: 90 },
+      { name: "JavaScript", icon: FaJs, percent: 78 },
     ],
   },
   {
