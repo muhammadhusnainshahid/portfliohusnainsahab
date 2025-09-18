@@ -61,8 +61,4 @@ Muhammad Husnain Shahid
     <img src="https://img.shields.io/badge/LinkedIn-Connect-0077B5?logo=linkedin" alt="LinkedIn"/>
   </a>
 </p>
-```
 
-I can also **create a fully consistent template** for all your Flutter and Next.js projects, so you only replace the app name and screenshots each time.
-
-Do you want me to do that?
